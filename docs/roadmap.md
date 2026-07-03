@@ -1,94 +1,70 @@
 # Acme GmbH Homelab Roadmap
 
-## Stage 1 — Server Preparation
+---
 
-### Goals
-- Linux user management
-- permissions model
+## Stage 1 — Linux Fundamentals
+Status: COMPLETED
+
+Covered:
+- users & groups
+- permissions
 - systemd basics
-
-Status: COMPLETED
-
-Status Date: 2026-07-02
+- basic troubleshooting
 
 ---
 
-## Stage 2 — First Service (hello)
+## Stage 2 — Core Services (IN PROGRESS)
 
-### Goals
-- systemd service
-- bash script
-- logging via journald
+Covered:
+- systemd service lifecycle
+- Apache HTTP Server
+- virtual hosts
+- filesystem structure (/srv vs /var/www)
+- basic service debugging (logs, status, configtest)
 
-### Tickets
-  - Ticket #0001 - Deploy first application service
-  - Ticket #0002 - Deploy Apache Web Server
-  
-### Incidents
-  - Incident #0001 - 203/Exec (missing traverse permission)
-  - Incident #0002 - 403 Forbidden
-
-Status: COMPLETED
-
-Status Date: 2026-07-03
+Next:
+- simple web application (PHP or static dynamic simulation)
+- intro to service interaction (Apache → app layer)
 
 ---
 
-## Stage 3 — Database
-- PostgreSQL installation
-- users & roles
-- simple schema
+## Stage 3 — Application Layer
 
-Status: NOT STARTED
+Not started
 
----
-
-## Stage 4 — Reverse Proxy
-- nginx / apache
-- routing to backend services
-
-Status: NOT STARTED
+Goal:
+- simple backend service
+- connect web server to application logic
+- introduce environment separation
 
 ---
 
-## Stage 5 — Monitoring
-- metrics
-- logs aggregation
-- alerting basics
+## Stage 4 — Networking Basics in Practice
 
-Status: NOT STARTED
+Not started
 
-## Interview Competencies
+Goal:
+- ports & binding
+- localhost vs network access
+- firewall basics (conceptual + basic ufw)
 
-### Linux basics
-- [x] users
-- [x] groups
-- [x] permissions
-- [x] ownership
-- [x] processes
+---
 
-### systemd
-- [x] service
-- [x] journalctl
-- [x] enable/start
-- [x] troubleshooting 203/EXEC
+## Stage 5 — Infrastructure Expansion
 
-### Networking
-- [ ] ip
-- [ ] ss
-- [ ] routing
-- [ ] dns
+Not started
 
-### Web
-- [ ] nginx
-- [ ] apache
+Goal:
+- PostgreSQL
+- Reverse Proxy (Nginx)
+- multi-service interaction
 
-### Databases
-- [ ] PostgreSQL
+---
 
-### Containers
-- [ ] Docker
+## Stage 6 — Automation (optional later)
 
-### Monitoring
-- [ ] Prometheus
-- [ ] Grafana
+Not started
+
+Goal:
+- Bash scripting improvements
+- optional Ansible intro
