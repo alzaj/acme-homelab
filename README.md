@@ -1,2 +1,2 @@
 # acme-homelab
-refreshing Linux knowledges
+refreshing Linux knowledges with help of ChatGPT
